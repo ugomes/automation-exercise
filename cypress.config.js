@@ -7,6 +7,8 @@ module.exports = defineConfig({
     },
     video: true,                 // ✅ Ativa a gravação de vídeos
     videoCompression: 32,        // ✅ Aplica compressão ao vídeo (reduz tamanho sem perder muita qualidade)
-    videoUploadOnPasses: true,   // ✅ Salva vídeos mesmo quando os testes PASSAM
+    videoUploadOnPasses: false,  
+    experimentalRunAllSpecs: true,
+
   },
 });
