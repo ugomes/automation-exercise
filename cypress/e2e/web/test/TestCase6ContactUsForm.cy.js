@@ -17,6 +17,8 @@ describe('Test Case 6: Contact Us Form', () => {
         });
         cy.get('.status.alert.alert-success')
         .should('have.text', 'Success! Your details have been submitted successfully.')
+        cy.get('a.btn.btn-success').click()
+        cy.title().should('eq', 'Automation Exercise');
 
 })
     
