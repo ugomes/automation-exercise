@@ -2,7 +2,7 @@ describe('Test Case 2: Login User with correct email and password', () => {
 
 
     it('Test Case ', () => {
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
         cy.title().should('eq', 'Automation Exercise')
         cy.get('a').contains('Signup').click();
         cy.get('input[type="text"]').type('Testador46')
