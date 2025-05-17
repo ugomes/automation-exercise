@@ -1,4 +1,4 @@
-describe('cadastro com Email Exixtente', () => {
+describe('cadastro com Email Existente', () => {
     it('Deve exibir erro ao tentar se cadastrar com e-mail já registrado', () => {
       // 1. Abra o navegador e acesse a URL
       // (O navegador é aberto automaticamente pelo Cypress)
