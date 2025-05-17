@@ -9,6 +9,9 @@ module.exports = defineConfig({
     videoCompression: 32,        // ✅ Aplica compressão ao vídeo (reduz tamanho sem perder muita qualidade)
     videoUploadOnPasses: false,  
     experimentalRunAllSpecs: true,
+    viewportHeight: 1080,
+    viewportWidth: 1920,
+    baseUrl: 'https://automationexercise.com'
 
   },
 });

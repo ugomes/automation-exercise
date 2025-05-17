@@ -4,7 +4,7 @@ describe('Test case 4: Logout User', () => {
     beforeEach(() => {
         randomEmail = `user_${Date.now()}@example.com`; // Atribui o valor à variável
         
-        cy.visit('https://automationexercise.com')
+        cy.visit('/')
         cy.title().should('eq', 'Automation Exercise')
         cy.get('a').contains('Signup').click();
         cy.get('input[type="text"]').type('Testador46')

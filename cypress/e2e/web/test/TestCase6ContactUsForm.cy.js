@@ -1,6 +1,6 @@
 describe('Test Case 6: Contact Us Form', () => {    
     it('Test case 6: Contact Us Form', () => {
-        cy.visit('https://automationexercise.com/');
+        cy.visit('/');
         cy.title().should('eq', 'Automation Exercise');
         cy.get('a[href="/contact_us"]').click()
         cy.get('h2').contains('Contact Us').should('be.visible')
