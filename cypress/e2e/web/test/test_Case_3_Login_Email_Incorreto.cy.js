@@ -6,7 +6,7 @@ describe('Teste de Login Inválido Email e Password', () => {
   it('Deve exibir mensagem de erro ao tentar login com credenciais inválidas', () => {
     // 1. Abra o navegador e acesse a URL
     // (O navegador é aberto automaticamente pelo Cypress)
-    cy.visit('http://automationexercise.com')
+    cy.visit('/')
     
     // 3. Verifique se a página inicial está visível com sucesso
     cy.get('.logo').should('be.visible')

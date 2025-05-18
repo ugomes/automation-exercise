@@ -2,7 +2,7 @@ describe('Register User', () => {
     it('Test case 1: Register User', () => {
         const randomEmail = `user_${Date.now()}@example.com`;
 
-        cy.visit('https://www.automationexercise.com/');
+        cy.visit('/');
         cy.title().should('eq', 'Automation Exercise');
         cy.contains('a', 'Signup / Login').click();
         cy.get('.signup-form > h2').should('have.text', 'New User Signup!');

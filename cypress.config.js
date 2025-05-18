@@ -2,7 +2,8 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
+    baseUrl: 'https://automationexercise.com',
+     setupNodeEvents(on, config) {
       // Implementar os listeners de eventos aqui, se necessário
     },
     video: true,                 // ✅ Ativa a gravação de vídeos
