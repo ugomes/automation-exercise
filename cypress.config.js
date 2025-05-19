@@ -2,12 +2,19 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://automationexercise.com',
-     setupNodeEvents(on, config) {
+       
+    setupNodeEvents(on, config) {
       // Implementar os listeners de eventos aqui, se necessário
     },
     video: true,                 // ✅ Ativa a gravação de vídeos
     videoCompression: 32,        // ✅ Aplica compressão ao vídeo (reduz tamanho sem perder muita qualidade)
     videoUploadOnPasses: true,   // ✅ Salva vídeos mesmo quando os testes PASSAM
+    videoUploadOnPasses: false,  
+    experimentalRunAllSpecs: true,
+    viewportHeight: 1080,
+    viewportWidth: 1920,
+    baseUrl: 'https://automationexercise.com'
+
+
   },
 });
