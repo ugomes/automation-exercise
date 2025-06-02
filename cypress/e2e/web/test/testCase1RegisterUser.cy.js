@@ -1,0 +1,41 @@
+describe('Register User', () => {
+    it('Test case 1: Register User', () => {
+        const randomEmail = `user_${Date.now()}@example.com`;
+
+        cy.visit('/');
+        cy.title().should('eq', 'Automation Exercise');
+        cy.contains('a', 'Signup / Login').click();
+        cy.get('.signup-form > h2').should('have.text', 'New User Signup!');
+        cy.get('input[placeholder="Name"]').type('John Doe');
+        cy.get('[data-qa="signup-email"]').type(randomEmail);
+        cy.get('[data-qa="signup-button"]').click(); 
+        cy.contains('h2', 'Enter Account Information').should('be.visible');
+        cy.get('#id_gender1').click();
+        cy.get('[data-qa="name"]').type('John Doe');
+        cy.get('[data-qa="email"]').should('have.value', randomEmail);
+        cy.get('[data-qa="password"]').type('password');    
+        cy.get('[data-qa="days"]').select('30');
+        cy.get('[data-qa="months"]').select('May');
+        cy.get('[data-qa="years"]').select('1990');
+        cy.get('#newsletter').click();
+        cy.get('#optin').click();
+        cy.contains('h2', 'Address Information').should('be.visible');
+        cy.get('[data-qa="first_name"]').type('John');
+        cy.get('[data-qa="last_name"]').type('Doe');
+        cy.get('[data-qa="company"]').type('Automation Exercise');
+        cy.get('[data-qa="address"]').type('Automation Exercise');
+        cy.get('[data-qa="country"]').select('United States');
+        cy.get('[data-qa="state"]').type('New York');
+        cy.get('[data-qa="city"]').type('New York');
+        cy.get('[data-qa="zipcode"]').type('123456');
+        cy.get('[data-qa="mobile_number"]').type('1234567890');
+        cy.get('[data-qa="create-account"]').click();
+        cy.get('#form h2 > b').should('have.text', 'Account Created!');
+        cy.get('[data-qa="continue-button"]').click();
+        cy.contains('Logged in as John Doe').should('be.visible');
+        cy.get('.shop-menu > .nav > :nth-child(5) > a').click();
+        cy.contains('Account Deleted!').should('be.visible');
+        cy.get('[data-qa="continue-button"]').click();
+        cy.get('.active > :nth-child(1) > h1').should('be.visible');  
+    });
+});
