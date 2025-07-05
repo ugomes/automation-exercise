@@ -1,0 +1,27 @@
+[33mcommit 652c7d31d7af11a4856fe323604bcc40d4a7b23d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 0b0510d f7014c5
+Author: Junior <henrryjk@hotmail.com>
+Date:   Thu Jun 26 19:19:58 2025 -0300
+
+    Merge branch 'main' of https://github.com/ugomes/automation-exercise
+
+[33mcommit 0b0510d1ba9c9453500d6dfd2fcb3aae07941d4a[m
+Author: Junior <henrryjk@hotmail.com>
+Date:   Thu Jun 26 19:19:53 2025 -0300
+
+    teste15
+
+[33mcommit f7014c5c9fb7cd9298240a0f4a9850214323faf9[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Merge: 687773c b6dabc7
+Author: Uelton Gomes <102355027+ugomes@users.noreply.github.com>
+Date:   Sun Jun 22 20:48:50 2025 -0300
+
+    Merge pull request #13 from ugomes/test-case-14-place-order-register-while-checkout
+    
+     Teste Case 14
+
+[33mcommit b6dabc70b215cbc7bfdd628e19a246ed49224cf9[m[33m ([m[1;31mupstream/test-case-14-place-order-register-while-checkout[m[33m)[m
+Author: ugomes <uelton.gomes@uol.com.br>
+Date:   Sun Jun 22 20:45:44 2025 -0300
+
+     Teste Case 14
